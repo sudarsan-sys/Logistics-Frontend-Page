@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+  @media (min-width: 319px) and (max-width: 480px) {
+    .container{
+      max-width:400px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1200px) {
+    .container{
+      max-width:700px
+    }
+  }
+
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    .container{
+      max-width:1000px ;
+    }
+  }
+
+  @media (min-width: 1601px) {
+    .container{
+      max-width:1600px;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="box-seam.svg" style="width:50px; height:30px;">LogoTaxa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Referral Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Your Orders
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Your Shippings</a></li>
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign Out</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pos" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" style="background-color: #737373; color:white; border:1px solid black">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Swift Solutions</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4" style="margin:50px 0px 50px 0px;">Welcome to Logotaxa! We’re thrilled to have you here. As your trusted partner in logistics, we specialize in delivering seamless solutions tailored to your needs. Our commitment to excellence ensures that your shipments are handled with care and precision, from start to finish. Explore our range of services designed to optimize your supply chain and enhance efficiency. Let us take the stress out of logistics so you can focus on what matters most—growing your business!</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" style="background-color: #fbbf24; border:none">Transport Booking</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Know More</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="moving-van.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="container px-4 py-5" id="featured-3">
+    <h1 class="pb-2 border-bottom" style="font-weight: bold;">Our Approach</h1>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="64" 
+          height="64" 
+          viewBox="0 0 64 64" 
+          fill="none" 
+          stroke="#fbbf24" 
+          stroke-width="2"
+      >
+          <path d="M3 30h6v18H3zM3 30h6v-8h-6zM7 38h42l-5-18H16L7 38z" fill="yellow"/>
+          <path d="M16 30v18h36V30H16z" fill="yellow"/>
+          <path d="M50 48a6 6 0 1 0 0 12 6 6 0 0 0 0-12zM10 48a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/>
+      </svg>
+      
+        </div>
+        <h3 class="fs-2 text-body-emphasis"> Real-Time Tracking</h3>
+        <p>Stay informed with our advanced real-time tracking system. Monitor your shipments at every stage of the journey, receiving instant updates and notifications. Our user-friendly interface ensures you have complete visibility of your cargo, allowing you to plan efficiently and respond swiftly to any changes.</p>
+        <a href="#" class="icon-link">
+          Monitor Your Cargo
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="50" 
+          height="50" 
+          viewBox="0 0 64 64" 
+          fill="#FBBF24"
+      >
+          <path d="M12 4h40a2 2 0 0 1 2 2v12h-8V8H18v8H10V6a2 2 0 0 1 2-2zm44 18v34a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V22H4v34a8 8 0 0 0 8 8h40a8 8 0 0 0 8-8V22h-4zM32 38a4 4 0 1 1-4-4 4 4 0 0 1 4 4zm8 0a4 4 0 1 1-4-4 4 4 0 0 1 4 4z"/>
+      </svg>
+      
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Customized Solutions</h3>
+        <p>At Logotaxa, we understand that every business is unique. That’s why we offer tailored logistics solutions to meet your specific needs. Whether you require temperature-controlled transportation, specialized handling, or dedicated warehousing, our team of experts will work closely with you to design a logistics plan that optimizes your operations and enhances efficiency.</p>
+        <a href="#" class="icon-link">
+          Tailor Your Logistics
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="64" 
+          height="64" 
+          viewBox="0 0 64 64" 
+          fill="#FBBF24"
+      >
+          <path d="M12 22h-2V10h34v4h4v8H12v-4zm-6 4v26h4V26h-4zm44 0v26h4V26h-4zM4 10h4v6H4zm20 0h20v6H24zm20 0h4v6h-4zM12 26h36a2 2 0 0 1 2 2v2H10v-2a2 2 0 0 1 2-2zm-8 6v8h40v-8H4zM2 46h60v4H2z" />
+          <path d="M4 48h8v8H4zM50 48h8v8h-8zM34 44H30V40h4zM22 44h-4v-4h4z" />
+          <path d="M20 30h24l-2-6H22zM10 22h4l-4-6zM52 22h4l-4-6z" />
+      </svg>
+      
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Fast and Reliable Delivery</h3>
+        <p>Count on Logotaxa for prompt and dependable delivery services. Our extensive network and strategic partnerships enable us to deliver your shipments on time, every time. With a focus on efficiency and safety, we ensure that your cargo reaches its destination without delays, giving you peace of mind and helping your business thrive.        </p>
+        <a href="#" class="icon-link">
+          Click here for reviews
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+    </div>
+  </div>
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Designer (1).jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:black; font-weight: bold; font-size:50px;">Seamless Logistics Solutions</h5>
+            <p style="color:black; font-weight: 500;">Delivering Excellence at Every Step!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Designer (2).jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:black; font-weight: bold; font-size:50px;"> Customized Shipping Plans</h5>
+            <p style="color:black; font-weight: 500;">Tailored to Fit Your Business Needs!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Designer (3).jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:black; font-weight: bold; font-size:50px;">Fast & Reliable Delivery</h5>
+            <p style="color:black; font-weight: 500;">Your Cargo, Our Commitment!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center  pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-5 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-5 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-5 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-5 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-5 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+  </footer>
+  
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
